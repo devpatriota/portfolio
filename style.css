@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #EE4266;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #ee4267c3;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 0%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: white;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition-duration: .2s;
+}
+
+header nav{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    padding: 15px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #EE4266;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+header .btn-menu button{
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #d1d1d1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+    transform: scale(1.05);
+    transition-duration: .2s;
+    text-decoration: none;
+}
+
+header .btn-menu button:hover{
+    box-shadow: 0px 0px 8px #efefefa3;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo_site{
+    padding: 40px 4%;
+}
+
+section.topo_site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo_site h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo_site .txt_topo_site h1 span{
+    color: #EE4266;
+}
+
+.topo_site .txt_topo_site p{
+    color: white;
+    margin: 30px 0px;
+}
+
+section.topo_site .img_topo_site img{
+    border-radius: 50%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESILOS DAS HABILIDADES */
+
+section.habilidades{
+    padding: 80px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades_box{
+    color: white;
+    padding: 40px;
+    margin-top: 38px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.habilidades .habilidades_box:hover{
+    box-shadow: 0 0 8px #d1d1d1;
+}
+
+.habilidades .habilidades_box i{
+    font-size: 70px;
+    color: #EE4266;
+}
+
+
+.habilidades .habilidades_box h3{
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+/*ESTILO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt_sobre{
+    color: white;
+}
+
+.sobre .txt_sobre h2{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt_sobre h2 span{
+    color: #EE4266;
+    display: block;
+}
+
+.sobre .txt_sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt_sobre p span{
+    color: #EE4266;
+    font-weight: 500;
+}
+
+.sobre .txt_sobre .btn-redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #EE4266;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 4px;
+    transition: .2s;
+}
+
+section.sobre .img_sobre img{
+    width: 400px;
+    border-radius: 30px;
+}
+
+/*ESTILO DO PROJETO */
+
+section.projetos{
+    padding: 80px 4%;
+
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img_projeto{
+    width: 360px;
+    height: 460px;
+    background-color: #EE4266;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img_projeto:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008b;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+    box-shadow: 0 0 8px #d1d1d1;
+}
